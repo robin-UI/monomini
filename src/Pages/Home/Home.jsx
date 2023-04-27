@@ -1,3 +1,5 @@
+import Footer from "../../Components/Footer/Footer"
+import Form from "../../Components/Form/Form"
 import Navbar from "../../Components/Navbar/Navbar"
 import Buttons from "../../Components/utils/Buttons/Buttons"
 
@@ -5,7 +7,7 @@ const Home = () => {
     return (
         <>
             <Navbar />
-            <div className="LandingDiv h-[100vh] bg-slate-200 flex flex-col justify-center items-center">
+            <div id="hero" className="LandingDiv h-[100vh] bg-slate-200 flex flex-col justify-center items-center">
                 <h1 className="font-bold text-5xl">Your Patner In Quality</h1>
                 <h2 className=" mt-2 font-bold text-5xl text-blue-700">Building Meterials.</h2>
                 <p className="mt-2 text-base font-medium ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -32,8 +34,8 @@ const Home = () => {
                     </div>
                 </div>
 
-                {/* Second Section */}
-                <div className="secondSection flex">
+
+                <div id="about" className="secondSection flex">
                     <div className="LeftSection w-[76rem]">
                         <div className="TopSection">
                             <h2>Why Choose Indora?</h2>
@@ -66,6 +68,8 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <Form />
+            <Footer />
         </>
     )
 }
