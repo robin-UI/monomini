@@ -1,6 +1,7 @@
 import Footer from "../../Components/Footer/Footer"
 import Form from "../../Components/Form/Form"
 import Navbar from "../../Components/Navbar/Navbar"
+import Product from "../../Components/Product/Product"
 import Buttons from "../../Components/utils/Buttons/Buttons"
 
 const Home = () => {
@@ -68,6 +69,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <Product/>
             <Form />
             <Footer />
         </>
